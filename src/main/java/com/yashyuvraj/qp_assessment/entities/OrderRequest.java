@@ -11,10 +11,10 @@ public class OrderRequest {
     @NotNull(message = "User ID is required")
     private String userId;
     @NotEmpty(message = "At least one item is required")
-    private List<Long> itemIds;
+    private List<OrderItemRequest> items;
 
     public String getUserId() { return userId; }
     public void setUserId(String userId) { this.userId = userId; }
-    public List<Long> getItemIds() { return itemIds; }
-    public void setItemIds(List<Long> itemIds) { this.itemIds = itemIds; }
+    public List<OrderItemRequest> getItems() { return items; }
+    public void setItemIds(List<OrderItemRequest> items) { this.items = items; }
 }

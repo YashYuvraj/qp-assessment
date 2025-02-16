@@ -25,6 +25,7 @@ public class GroceryItemService {
     }
 
     public GroceryItem addItem(GroceryItem item) {
+        System.out.println("adding item");
         return groceryItemRepository.save(item);
     }
 
